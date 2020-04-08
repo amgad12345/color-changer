@@ -1,0 +1,176 @@
+
+
+
+#root {
+  font: 16px / 1 sans-serif;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+header {
+height: 6rem;
+display: flex;
+justify-content: center;
+align-items: center;
+
+background: url("./images/clouds.jpeg");
+
+
+}
+
+footer {
+background: url("./images/stars.jpeg");
+color: blanchedalmond;
+height: 5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+
+}
+
+.whole {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  overflow: auto;
+  padding-top: 2rem;
+  
+}
+
+input {
+ width: 10rem;
+}
+
+.button-Container {
+  display: flex;
+  justify-content: center;
+}
+
+
+button {
+ margin-left: auto;
+ margin-right: auto;
+  text-align: center;
+  width: fit-content;
+  background-color: #56baed;
+  border: none;
+  color:rgb(19, 42, 54);
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.myslider {
+  position: relative;
+  z-index: 1;
+  appearance: none;
+  border-radius: 0.5em;
+  
+  height: 0.8rem;
+  width: 20%;
+  display: block;
+  outline: none;
+  margin: 1rem auto;
+  transition: color 0.05s linear;
+  background: linear-gradient(to right, rgb(255,0,0), rgb(255,255,0), rgb(0,255,0),rgb(0,255,255),rgb(0,0,255),rgb(255,0,255),rgb(255,0,0));
+  &:focus{
+    outline: none;
+  }
+  &:active,
+  &:hover:active{
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+  &::-moz-range-track{
+    appearance: none;
+    opacity: 0;
+    outline: none !important;
+  }
+  &::-ms-track{
+    outline: none !important;
+    appearance: none;
+    opacity: 0;
+  }
+
+  &::-webkit-slider-thumb{
+    height: 1em;
+    width: 1em;
+    border-radius: 2em;
+    appearance: none;
+    background: white;
+    cursor: pointer;
+    cursor: move;
+    cursor: grab;
+    cursor: -webkit-grab;
+    border: 0.4em solid currentColor;
+    transition: border 0.1s ease-in-out,box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.377);
+    &:active,
+    &:hover:active{
+      cursor: grabbing;
+      cursor: -webkit-grabbing;
+      transform: scale(0.975);
+      box-shadow: 0 0 1px rgba(0,0,0,0.1);
+      border: 1.5em solid currentColor;
+    }
+    &:hover{
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+  }
+  &::-moz-range-thumb{
+    height: 1em;
+    width: 1em;
+    border-radius: 2em;
+    appearance: none;
+    background: white;
+    border: 0.4em solid currentColor;
+    cursor: pointer;
+    cursor: move;
+    cursor: grab;
+    cursor: -webkit-grab;
+    transition: box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out;
+    box-shadow: 0 1px 11px rgba(0,0,0,0);
+    &:active,
+    &:hover:active{
+      cursor: grabbing;
+      cursor: -webkit-grabbing;
+      transform: scale(0.975);
+      box-shadow: 0 0 1px rgba(0,0,0,0.1);
+    }
+    &:hover{
+      transform: scale(1.1);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+  }
+
+}
